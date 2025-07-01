@@ -21,7 +21,7 @@ ul{
     padding: 0.3% 3%;
 
     border-bottom: 1.5px solid #ffffff;
-    background-color:  #1e8fff58;
+    background-color:  #1e8fff00;
 }
 .header-container button:hover {
     color: rgb(178, 178, 178);
@@ -44,14 +44,14 @@ ul{
 .HeaderList button {
   font-size: larger;
   font-weight: 300;
-  color: aliceblue;
+  color: rgb(240, 248, 255);
   border: none;
   background-color: transparent;
 }
 
 .Content{
   color: aliceblue;
-    background: linear-gradient(to bottom right, #1e8fff58, #09468b); 
+    background: linear-gradient(to bottom right, #1e8fff00, #09468b); 
 }
 .home{
     display: grid;
@@ -63,7 +63,7 @@ ul{
     font-size: 900%;
     animation: intromessage linear ;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 20%;
 }
 @keyframes intromessage {
     from {
@@ -75,6 +75,16 @@ ul{
         transform: translateX(0);
     }
     
+}
+@keyframes upmessage {
+    from {
+        opacity: 0;     
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .home h2{
     font-size: 400%;
@@ -103,18 +113,54 @@ ul{
 .AboutMe{
     
    color: aliceblue;
+   
   
+}
+.AboutMe h1{
+   
+    animation: intromessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 .AboutMe h3{
     font-size: 100%;
     margin-left: 20%;
     padding-top: 10%;
+    animation: intromessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 
 }
 .Experience h1{
     font-size: 1000%;
     margin-top: 10%;
    margin-left: 20%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.Portfolio h1{
+    font-size: 1000%;
+    margin-top: 10%;
+   margin-left: 30%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.ExperienceList {
+ display: grid;
+    grid-template-columns: 30% 70%;
+}
+.Contact h1{
+    font-size: 1000%;
+    margin-top: 10%;
+   margin-left: 30%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 canvas {
   position: fixed;

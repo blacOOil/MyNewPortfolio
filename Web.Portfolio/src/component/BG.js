@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 // Scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff); // Set white background
+scene.background = new THREE.Color('#0a0f2c'); // dark blue
 
 
 // Camera
