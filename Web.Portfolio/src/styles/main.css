@@ -149,6 +149,11 @@ ul{
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
 }
+.PortfolioList {
+    padding-left: 10%;
+ display: grid;
+    grid-template-columns: 50% 50%;
+}
 .ExperienceList {
  display: grid;
     grid-template-columns: 30% 70%;
@@ -161,6 +166,20 @@ ul{
    animation: upmessage linear ;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
+}
+.ContactList {
+    padding-left: 10%;
+ display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.ContactLogo {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 canvas {
   position: fixed;
