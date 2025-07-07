@@ -18,9 +18,8 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3% 3%;
-
-    border-bottom: 1.5px solid #ffffff;
+    padding: 1% 1%;
+    border-bottom: 1px solid #ffffff;
     background-color:  #1e8fff00;
 }
 .header-container button:hover {
@@ -32,7 +31,6 @@ ul{
   gap: 30px;
 }
 
-
 .HeaderList {
   list-style: none;
   display: flex;
@@ -42,7 +40,7 @@ ul{
 }
 
 .HeaderList button {
-  font-size: larger;
+  font-size: 25px;
   font-weight: 300;
   color: rgb(240, 248, 255);
   border: none;
@@ -55,12 +53,13 @@ ul{
 }
 .home{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
+     gap: 0.0002px;
     color: rgb(255, 255, 255);
-    padding-left: 100px;
+    padding-left: 200px;
 }
 .home h1{
-    font-size: 900%;
+    font-size: 1200%;
     animation: intromessage linear ;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
@@ -88,34 +87,21 @@ ul{
 }
 .home h2{
     font-size: 400%;
-    margin-top:-8%;
+    margin-top: -10px;
+    margin-left: 5%;
+
+}
+.home h3{
+    font-size: 200%;
+    padding-top: 1%;
     margin-left: 5%;
 
 }
 .link h1{
     margin-left: 5%;
 }
-.AboutMe{
-    
-   color: aliceblue;
-   
-  
-}
-.AboutMe h1{
-   
-    animation: intromessage linear ;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-}
-.AboutMe h3{
-    font-size: 100%;
-    margin-left: 20%;
-    padding-top: 10%;
-    animation: intromessage linear ;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
 
-}
+
 .Experience h1{
     font-size: 1000%;
     margin-top: 10%;

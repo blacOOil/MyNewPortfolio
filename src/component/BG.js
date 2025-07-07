@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 
+
+
 // Raycaster & Mouse Vector
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
@@ -30,14 +32,15 @@ document.body.appendChild(renderer.domElement);
 
 // Plane for raycasting
 const planeGeometry = new THREE.PlaneGeometry(30, 400);
-const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x222222, side: THREE.DoubleSide ,transparent: true,opacity: 0.2,});
+const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x222222, side: THREE.DoubleSide ,transparent: true,opacity: 0,});
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.rotation.x = -Math.PI / 1; // Horizontal plane
 scene.add(plane);
 
 // Cube (object that follows mouse)
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshStandardMaterial({ color: 0x00aaff });
+const geometry = new THREE.SphereGeometry(0.2, 32, 32);
+const material = new THREE.ShaderMaterial(
+);
 const cube = new THREE.Mesh(geometry, material);
 cube.position.y = 0.5; // Start above ground
 scene.add(cube);
