@@ -1,14 +1,18 @@
 {
   "name": "test",
+  "homepage": "https://blacOOil.github.io/MyNewPortfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.0.3",
     "vite-plugin-glsl": "^1.5.1",
     "vite-plugin-string": "^1.2.3"
