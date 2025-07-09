@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./src/assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+button
+{
+}
+body{
+    font-family: 'Inter', sans-serif;
+  
+}
+ul{
+
+}
+.header-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 1%;
+    border-bottom: 1px solid #ffffff;
+    background-color:  #1e8fff00;
+}
+.header-container button:hover {
+    color: rgb(178, 178, 178);
+   
+}
+.homebutt {
+  display: flex;
+  gap: 30px;
+}
+
+.HeaderList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.HeaderList button {
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(240, 248, 255);
+  border: none;
+  background-color: transparent;
+}
+
+.Content{
+  color: aliceblue;
+    background: linear-gradient(to bottom right, #1e8fff00, #09468b); 
+}
+.home{
+    display: grid;
+    grid-template-columns: 70% 30%;
+     gap: 0.0002px;
+    color: rgb(255, 255, 255);
+    padding-left: 200px;
+}
+.home h1{
+    font-size: 1200%;
+    animation: intromessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+@keyframes intromessage {
+    from {
+        opacity: 0;     
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@keyframes upmessage {
+    from {
+        opacity: 0;     
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.home h2{
+    font-size: 400%;
+    margin-top: -10px;
+    margin-left: 5%;
+
+}
+.home h3{
+    font-size: 200%;
+    padding-top: 1%;
+    margin-left: 5%;
+
+}
+.link h1{
+    margin-left: 5%;
+}
+
+
+.Experience h1{
+    font-size: 1000%;
+    margin-top: 10%;
+   margin-left: 20%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.ExperienceLine {
+    width: 2px;
+    height: 500px;
+    background-color: #ffffff; 
+}
+.Portfolio h1{
+    font-size: 1000%;
+    margin-top: 10%;
+   margin-left: 30%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.PortfolioList {
+    padding-left: 10%;
+ display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+.PortfolioList button {
+   
+    background-color: transparent;
+    border: none;
+    color: rgb(240, 248, 255);
+    font-weight: 300;
+}
+.PortContent {
+   
+}
+
+.ExperienceList {
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 10% 10% 80% ;
+
+    animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.Contact h1{
+    font-size: 1000%;
+    margin-top: 10%;
+   margin-left: 30%;
+
+   animation: upmessage linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.ContactList {
+    padding-left: 10%;
+ display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.ContactLogo {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ExpButtonList {
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.ExpButtonList button {
+    padding-top: 90px;
+  font-size: larger;
+  font-weight: 300;
+  color: rgb(240, 248, 255);
+  border: none;
+  background-color: transparent;
+}
+
+.ExpButtonList button:hover {
+    color: rgb(178, 178, 178); 
+}
+.fistStory,.SecondStory,.ThirdStory,.fourthStory {
+    opacity:  0;
+    transition: opacity 0.3s ease;
+}
+.ExpStoryList {
+    list-style: none;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+
+ 
+ 
