@@ -60,6 +60,7 @@ ul{
 }
 .home h1{
     font-size: 1200%;
+   
     animation: intromessage linear ;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
@@ -86,14 +87,14 @@ ul{
     }
 }
 .home h2{
+    padding-top: 1px;
     font-size: 400%;
-    margin-top: -10px;
     margin-left: 5%;
 
 }
 .home h3{
     font-size: 200%;
-    padding-top: 1%;
+
     margin-left: 5%;
 
 }
